@@ -3,6 +3,7 @@ title: "ITD Animator Tutorial"
 format: html
 editor: visual
 author: "Liam Irwin - liamakirwin@gmail.com"
+output-dir: docs
 date: 2024-02-05
 ---
 
@@ -102,3 +103,4 @@ lmf_animator(chm, # Input CHM
 Resulting GIF
 
 ![](output/example_hs.gif)
+
