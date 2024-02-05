@@ -6,6 +6,6 @@ The function works by taking an input CHM, performing local maxima tree detectio
 
 This work is based on the demonstration by [ptompalski](https://github.com/ptompalski) his original code can be viewed [here](https://gist.github.com/ptompalski/94904eca2e1628fb52010c2890431715).
 
-# **View the tutorial on how to use this script**
+# [**View the tutorial on how to use this script**](https://liamirwin.github.io/ITD_Animator/)
 
 ![](output/readme.gif)
