@@ -109,7 +109,12 @@ lmf_animator <- function(chm, f = function(x) { x * 0.07 + 3},
   R <- as.data.frame(chm, xy=T)
 
   #calculate window size (mimicing what lidR::locate_trees does)
-  R <- R %>% mutate(ws = f(Z)) #ws is in meters (same units as the data)
+  if(is.function(f)) {
+    R <- R %>% mutate(ws = f(Z)) #ws is in meters (same units as the data)
+  } else {
+    # if f isnt a function, use a fixed window size
+    R <- R %>% mutate(ws = f) #ws is in meters (same units as the data)
+  }
 
   #calculate window extent
   R <- R %>% mutate(ws_x_min = x - ws/2,
